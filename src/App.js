@@ -20,12 +20,12 @@ class App extends Component {
                             <Link to="/resume">Resume</Link>
                             <Link to="/projects">Projects</Link>
                             <Link to="/contact">Contact</Link>
-                            <Link href="//www.linkedin.com/in/goce-ilievski-06b863132/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/goce-ilievski-06b863132/" target="_blank" rel="noopener noreferrer">
                                 <i className="fa fa-linkedin-square social-links" area-hidden="true" />
-                            </Link>
-                            <Link href="//github.com/GOCE1982" target="_blank" rel="noopener noreferrer">
+                            </a>
+                            <a href="https://github.com/GOCE1982" target="_blank" rel="noopener noreferrer">
                                 <i className="fa fa-github-square social-links" area-hidden="true" />
-                            </Link>
+                            </a>
                         </Navigation>
                     </Header>
                     <Drawer title="My Portfolio" > 
