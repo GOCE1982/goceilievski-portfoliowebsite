@@ -19,7 +19,7 @@ class Resume extends Component {
                          <h2 style={{paddingTop: "1em"}}>Goce Ilievski</h2>
                          <h4 style={{color: "grey"}}>Junior Web Developer</h4>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
-                         <p>I am a self-taught programmer who wants to make a permanent transition into web development. Started with programming and JavaScript back in 2015. Previous job - data analyst for a telecom consultancy company. Currently trying to land the very first job in the industry.</p>
+                         <p>I am a self-taught programmer who wants to make a permanent career change and transition into web development. Started with programming and JavaScript back in 2015. Previous job - data analyst for a telecom consultancy company. Currently trying to land the very first job in the industry.</p>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
                          <h5>Address</h5>
                          <p>ASNOM 164 st. 2/7 Skopje, North Macedonia</p>
@@ -29,14 +29,14 @@ class Resume extends Component {
                          <p>goce.ilievski@live.com</p>
                          <p>gotze.ilievski@gmail.com</p>
                          <h5>Website</h5>
-                         <p>My website</p>
+                         <p>https://goceilievski.netlify.app</p>
                      </Cell>
                      <Cell col={8} className="resume-right">
                          <h2>Education</h2>
                          <Education
                             startYear={2002}
                             endYear={2007}
-                            schoolName="University St. Cyril and Methodius - Faculty of Law"
+                            schoolName="University St. Cyril and Methodius - Faculty of Law Skopje"
                             schoolDescription="Finished the first module of studies on the faculty of law and currently hold a bachelor's degree with civil law as a major."
                          />
                          <hr style={{borderTop: '3px solid maroon'}} />

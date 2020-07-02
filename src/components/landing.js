@@ -15,10 +15,10 @@ class Landing extends Component {
                             <h4 className="banner-text">Fullstack Web Developer</h4>
                             <List>
                                 <ListItem >
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Self-taught</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Self-taught & highly motivated</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Using the MERN stack</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Fully commited</ListItemContent>
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Highly flexible</ListItemContent>
@@ -27,7 +27,7 @@ class Landing extends Component {
                                     <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Easy-going personality</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Accessible 24/7</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Available 24/7</ListItemContent>
                                 </ListItem>
                             </List>
                         </div>
