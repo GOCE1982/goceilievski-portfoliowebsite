@@ -143,3 +143,9 @@
 ul.mdl-list {
   padding-top: 0;
 }
+
+@media screen and (max-width: 588px) {
+  .mdl-layout__header .mdl-navigation {
+    display: none;
+  }
+}

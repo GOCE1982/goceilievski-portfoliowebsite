@@ -14,7 +14,7 @@ class Resume extends Component {
                  <Grid>
                      <Cell col={4}>
                          <div style={{textAlign: "center"}}>
-                             <img src="https://www.shareicon.net/data/512x512/2015/09/18/103160_man_512x512.png" style={{height: "400px", maxWidth: '100%', position: "relative", display: "flex"}} alt="avatar"/>
+                             <img src="https://www.shareicon.net/data/512x512/2015/09/18/103160_man_512x512.png" style={{maxWidth: '100%', maxHeight: '100%', position: "relative", display: "flex"}} alt="avatar"/>
                          </div>
                          <h2 style={{paddingTop: "1em"}}>Goce Ilievski</h2>
                          <h4 style={{color: "grey"}}>Junior Web Developer</h4>
@@ -77,20 +77,19 @@ class Resume extends Component {
                             jobName={`Attorney's Office Intern`}
                             jobDescription={`Attending at court ruling, writing legal appeals and other legal documents, maintaining archive, obtaining documentation from the state firm registry, providing legal consulting.`}
                          />
-                         <hr style={{borderTop: '3px solid maroon'}} />
-                         <h2>Skills
-                        </h2>
-                        <h1> 
+                        <hr style={{borderTop: '3px solid maroon'}} />
+                        <h2>Skills</h2>
+                        <div style={{fontSize: '3rem', display: 'inline-block', width: '90%'}}> 
                             <FontAwesomeIcon icon={faHtml5} transform="right-2" fixedWidth/>
-                            <FontAwesomeIcon icon={faCss3Alt} transform="right-4" fixedWidth/>
-                            <FontAwesomeIcon icon={faJs} transform="right-8" ixedWidth/>
-                            <FontAwesomeIcon icon={faNode} transform="right-16" fixedWidth/>
-                            <FontAwesomeIcon icon={faReact} transform="right-24" fixedWidth/>
-                            <FontAwesomeIcon icon={faNpm} transform="right-32" fixedWidth/>
-                            <FontAwesomeIcon icon={faPython} transform="right-40" fixedWidth/>
-                            <FontAwesomeIcon icon={faDatabase} transform="right-48" fixedWidth/>
-                            <FontAwesomeIcon icon={faLinux} transform="right-56" fixedWidth/>
-                        </h1>
+                            <FontAwesomeIcon icon={faCss3Alt} transform="right-2" fixedWidth/>
+                            <FontAwesomeIcon icon={faJs} transform="right-4" fixedWidth/>
+                            <FontAwesomeIcon icon={faNode} transform="right-8" fixedWidth/>
+                            <FontAwesomeIcon icon={faReact} transform="right-12" fixedWidth/>
+                            <FontAwesomeIcon icon={faNpm} transform="right-16" fixedWidth/>
+                            <FontAwesomeIcon icon={faPython} transform="right-22" fixedWidth/>
+                            <FontAwesomeIcon icon={faDatabase} transform="right-24" fixedWidth/>
+                            <FontAwesomeIcon icon={faLinux} transform="right-26" fixedWidth/>
+                        </div>
                          <Skills 
                             skill="Javascript" 
                             progress={93}
