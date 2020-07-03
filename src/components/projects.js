@@ -20,9 +20,9 @@ class Projects extends Component {
         if(this.state.activeTab === 0){
             return(
                 <div className="projects-grid">
-                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', paddingRight: '5px'}}>
                         <CardTitle style={{color: '#fff', fontSize: 'bold', height: '176px', background: 'url(https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png) center / cover'}}></CardTitle>
-                        <CardText style={{wordWrap: 'break-word', textAlign: 'justify'}}>
+                        <CardText style={{wordWrap: 'break-word', justifyContent: 'space-evenly', textAlign: 'justify'}}>
                             The very fist project I finished while learning ReactJS. <br /> It exploits all the basics of React, plus using the Redux framework for state management. <br /> Heavily utilized the Twitter Bootstrap framework for the front-end. Used JSON placeholder for mocking the back-end and deployed it to a free Netlify hosting.
                         </CardText>
                         <CardActions border style={{justifyContent: 'space-between', display: 'flex'}}>
@@ -30,9 +30,9 @@ class Projects extends Component {
                             <Button colored href="https://contactmanager-redux.netlify.app/" target="_blank">Live Demo</Button>
                         </CardActions>
                     </Card>
-                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', paddingRight: '5px'}}>
                         <CardTitle style={{color: '#fff', fontSize: 'bold', height: '176px', background: 'url(https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png) center / cover'}}></CardTitle>
-                        <CardText style={{wordWrap: 'break-word', textAlign: 'justify'}}>
+                        <CardText style={{wordWrap: 'break-all', justifyContent: 'space-evenly', textAlign: 'justify'}}>
                             The second React project - a client manager.<br />Used Firebase on the back-end with enabled user authentication through react-redux-firebase.<br />A production level application with real-life usable features and persistance of the data in a cloud database.
                         </CardText>
                         <CardActions border style={{justifyContent: 'space-between', display: 'flex'}}>
@@ -52,9 +52,9 @@ class Projects extends Component {
         } else if(this.state.activeTab === 2) {
             return(
                 <div className="projects-grid">
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <Card shadow={5} style={{minWidth: '450', margin: 'auto', paddingRight: '5px'}}>
                     <CardTitle style={{color: '#fff', fontSize: 'bold', height: '176px', background: 'url(https://seeklogo.net/wp-content/uploads/2015/09/nodejs-logo-vector-download.jpg) center / cover'}}></CardTitle>
-                    <CardText style={{wordWrap: 'break-word', textAlign: 'justify'}}>
+                    <CardText style={{wordWrap: 'break-word'}}>
                         The fist project I finished while learning web development with NodeJS.<br />Used the Express framework with the EJS templating language, implemented user authentication with PassportJS and a backend REST API with full CRUD functionality.
                     </CardText>
                     <CardActions border style={{justifyContent: 'space-between', display: 'flex'}}>
