@@ -77,6 +77,8 @@
   font-family: 'Oxygen', sans-serif;
   font-weight: bolder;
   top: 0%;
+  display: inline-flex;
+  width: 90%;
 }
 
 .social-links {

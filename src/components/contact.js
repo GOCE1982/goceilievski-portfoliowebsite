@@ -29,7 +29,7 @@ class Contact extends Component {
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent className="contact-list">
-                                        <FontAwesomeIcon icon={faEnvelope} size="2x" transform="grow-2 shrink-3 down-4 left-8" fixedWidth/>
+                                        <FontAwesomeIcon icon={faEnvelope} size="2x" transform="grow-2 shrink-3 down-4 left-6"/>
                                         goce.ilievski@live.com
                                     </ListItemContent>
                                 </ListItem>
