@@ -22,14 +22,14 @@ class Resume extends Component {
                          <p>I am a self-taught programmer who wants to make a permanent career change and transition into web development. Started with programming and JavaScript back in 2015. Previous job - data analyst for a telecom consultancy company. Currently trying to land the very first job in the industry.</p>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
                          <h5>Address</h5>
-                         <p>ASNOM 164 st. 2/7 Skopje, North Macedonia</p>
+                         <p>Skopje, North Macedonia</p>
                          <h5>Phone</h5>
                          <p>(+389)070770189</p>
                          <h5>Email</h5>
                          <p>goce.ilievski@live.com</p>
                          <p>gotze.ilievski@gmail.com</p>
                          <h5>Website</h5>
-                         <p>https://goceilievski.netlify.app</p>
+                         <p>https://goceilievski.online</p>
                      </Cell>
                      <Cell col={8} className="resume-right">
                          <h2>Education</h2>
@@ -100,19 +100,19 @@ class Resume extends Component {
                         />
                         <Skills 
                             skill="Python"
-                            progress={62}
+                            progress={70}
                         />
                         <Skills 
                             skill="NodeJS"
-                            progress={55}
+                            progress={65}
                         />
                         <Skills 
                             skill="React"
-                            progress={55}
+                            progress={72}
                         />
                         <Skills 
                             skill="Redux"
-                            progress={35}
+                            progress={55}
                         />
                         <Skills 
                             skill="MySQL"
@@ -128,7 +128,7 @@ class Resume extends Component {
                         />
                         <Skills 
                             skill="MongoDB"
-                            progress={60}
+                            progress={88}
                         />
                      </Cell>
                  </Grid>
