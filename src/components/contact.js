@@ -10,9 +10,9 @@ class Contact extends Component {
             <div className="contact-body">
                 <Grid className="contact-grid">
                     <Cell col={6}>
-                        <div style={{paddingTop:"1em"}}>
-                            <h3>Goce Ilievski (Gotse Illiewsky)</h3>
-                            <img src="https://scontent.fskp2-1.fna.fbcdn.net/v/t1.0-9/p720x720/53665537_10217377693927722_405943734539124736_o.jpg?_nc_cat=111&_nc_sid=7aed08&_nc_ohc=VtZJFCzL0boAX9W_joA&_nc_ht=scontent.fskp2-1.fna&_nc_tp=6&oh=ec3624d5cbbe9d97fea4bbd0453c4d47&oe=5F1E93A9" alt="profile" className="profile-pic"/>
+                        <div><h3>Goce (Gotse) Ilievski</h3></div>
+                        <div className="profile-pic">
+                            
                         </div>
                     </Cell>
                     <Cell col={6}>

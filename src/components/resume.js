@@ -37,7 +37,7 @@ class Resume extends Component {
                             startYear={2002}
                             endYear={2007}
                             schoolName="University St. Cyril and Methodius - Faculty of Law Skopje"
-                            schoolDescription="Finished the first module of studies on the faculty of law and currently hold a bachelor's degree with civil law as a major."
+                            schoolDescription="Finished the first module of studies on the faculty of law and currently hold a Bachelor's degree with civil law as a major."
                          />
                          <hr style={{borderTop: '3px solid maroon'}} />
                          <h2>Experience</h2>

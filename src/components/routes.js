@@ -19,7 +19,7 @@ const withTitle = ({ component: Component, title }) => {
     };
 };
 
-const LandingComponent = withTitle({ component: Landing, title: 'MyPortfolioWebsite'})
+const LandingComponent = withTitle({ component: Landing, title: 'My Portfolio'})
 const ResumeComponent = withTitle({ component: Resume, title: 'My Resume'})
 const ProjectsComponent = withTitle({ component: Projects, title: 'My Projects'})
 const ContactComponent = withTitle({ component: Contact, title: 'Contact Me'})
