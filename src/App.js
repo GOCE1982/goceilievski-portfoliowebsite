@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/routes';
+import Footer from './components/footer';
 import { Link } from 'react-router-dom';
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
 
     render() {
         return (  
-            <div>
+            <div className="App">
                 <Layout fixedHeader>
                     <Header className="header-color" title={<a style={{color: "#fff", textDecoration: 'none'}} href="/">myPortfolio</a>}>
                         <Navigation>
@@ -43,8 +44,9 @@ class App extends Component {
                             <Main />
                         </div>
                     </Content>
+                    <Footer></Footer>
                 </Layout>
-        </div>
+            </div>
         );
     }
 }

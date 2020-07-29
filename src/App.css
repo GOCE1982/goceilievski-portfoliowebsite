@@ -5,10 +5,9 @@
 }
 
 .demo-grid-1 {
-  background: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat;
+  background: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat bottom;
   background-size: cover;
   background-position: bottom;
-  background-repeat: no-repeat;
   text-align: center;
   position: relative;
   margin: auto;
@@ -147,6 +146,27 @@
   height: 65vh;
   width: 100%;
   max-height: fit-content;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-content {
+  padding-bottom: 3.5rem;
+}
+
+#footer {
+  position: bottom;
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: -3.5rem;
+  bottom: 0;
 }
 
 ul.mdl-list {
