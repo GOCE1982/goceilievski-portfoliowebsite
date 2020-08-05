@@ -86,7 +86,7 @@ class Projects extends Component {
                 <Tab>React</Tab>
                 <Tab>MERN Stack</Tab>
                 <Tab>NodeJS</Tab>
-                <Tab>Django</Tab>
+                <Tab>Angular</Tab>
             </Tabs>
                 <Grid>
                     <Cell col={12}>

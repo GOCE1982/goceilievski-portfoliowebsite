@@ -17,9 +17,9 @@ class Resume extends Component {
                              <img src="https://www.shareicon.net/data/512x512/2015/09/18/103160_man_512x512.png" style={{maxWidth: '100%', maxHeight: '100%', position: "relative", display: "flex"}} alt="avatar"/>
                          </div>
                          <h2 style={{paddingTop: "1em"}}>Goce Ilievski</h2>
-                         <h4 style={{color: "grey"}}>Junior Web Developer</h4>
+                         <h4 style={{color: "grey"}}>Fullstack JavaScript Web Developer</h4>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
-                         <p>I am a self-taught programmer who wants to make a permanent career change and transition into web development. Started with programming and JavaScript back in 2015. Previous job - data analyst for a telecom consultancy company. Currently trying to land the very first job in the industry.</p>
+                         <p>A self-driven enthusiast who wants to make a permanent career change and transition into web development. Started with programming and JavaScript back in 2015. Currently trying to land the very first job in the industry.</p>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
                          <h5>Address</h5>
                          <p>Skopje, North Macedonia</p>
