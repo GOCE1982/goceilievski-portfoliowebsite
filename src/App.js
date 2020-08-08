@@ -16,7 +16,7 @@ class App extends Component {
         return (  
             <div className="App">
                 <Layout fixedHeader>
-                    <Header className="header-color" title={<a style={{color: "#fff", textDecoration: 'none'}} href="/">myPortfolio</a>}>
+                    <Header className="header-color" title={<Link style={{color: "#fff", textDecoration: 'none'}} to="/">myPortfolio</Link>}>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/projects">Projects</Link>

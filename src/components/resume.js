@@ -13,9 +13,6 @@ class Resume extends Component {
              <div>
                  <Grid>
                      <Cell col={4}>
-                         <div style={{textAlign: "center"}}>
-                             <img src="https://www.shareicon.net/data/512x512/2015/09/18/103160_man_512x512.png" style={{maxWidth: '100%', maxHeight: '100%', position: "relative", display: "flex"}} alt="avatar"/>
-                         </div>
                          <h2 style={{paddingTop: "1em"}}>Goce Ilievski</h2>
                          <h4 style={{color: "grey"}}>Fullstack JavaScript Web Developer</h4>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />

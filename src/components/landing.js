@@ -1,74 +1,39 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+import { Grid, Cell, List, ListItem, ListItemContent, Button } from 'react-mdl';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import profile from "../img/img.jpg";
 
 class Landing extends Component {
      render() {
          return(
-             <div className="demo-grid-1">
-                <Grid>
-                    <Cell col={4}>
-                        <div>
-                            <img src="https://www.shareicon.net/data/512x512/2015/09/18/103160_man_512x512.png" alt="avatar" className="avatar-image" />
+             <div style={{width: '100%', margin: 'auto'}}>
+                <Grid className="landing-grid">
+                    <Cell col={12} style={{paddingTop: '3.5em', margin: 0}} className="dark-overlay">
+                            <img src={profile} alt="avatar" className="avatar-image" />
                             <p></p>
-                            <h4 className="banner-text">Fullstack Web Developer</h4>
+                            <h4 className="banner-text">Fullstack JavaScript Web Developer</h4>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
                             <List>
                                 <ListItem >
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Highly motivated</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Highly Motivated</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Fully commited</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Fully Commited</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Passionate about tech</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Team Player</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Easy-going personality</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Big Tech Nerd</ListItemContent>
                                 </ListItem>
                             </List>
                         </div>
                     </Cell>
-                    <Cell col={4} style={{paddingTop: '17.5%'}}>
-                        <div className="banner-text" >
-                            <h1>Front-end skills</h1>
+                    <Cell col={12}>
+                        <div className="page-content">
+                            <Button raised colored ripple href="/projects">Browse My Projects</Button>
                         </div>
-                        <List>
-                            <ListItem >
-                                <ListItemContent className="list-items">HTML</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent className="list-items">CSS</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent className="list-items">JavaScript ES7+</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent className="list-items">React</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent className="list-items">Redux</ListItemContent>
-                            </ListItem>
-                        </List>
-                    </Cell>
-                    <Cell col={4} style={{paddingTop: '17.5%'}}>
-                        <div className="banner-text">
-                            <h1>Back-end skills</h1>
-                        </div>
-                        <List>
-                            <ListItem >
-                                <ListItemContent className="list-items">NodeJS</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent className="list-items">Express</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent className="list-items">MongoDB</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent className="list-items">MySQL</ListItemContent>
-                            </ListItem>
-                        </List>
                     </Cell>
                 </Grid> 
              </div>

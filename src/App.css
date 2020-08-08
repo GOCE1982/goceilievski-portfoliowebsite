@@ -1,11 +1,11 @@
 .header-color {
-  background: #1a2a6c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.demo-grid-1 {
-  background: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) ;
+.landing-grid {
+  background: url("./img/profile-bg.jpg") ;
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -22,10 +22,18 @@
   overflow: hidden;
 }
 
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: auto;
+}
+
 @media screen and (min-width: 841px) { 
   .demo-grid-1 {
     /* left: 50%; */
-    position: absolute;
+    position: fixed;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     bottom: 0;
   }
 }
@@ -43,12 +51,12 @@
 }
 
 .banner-text {
-  background-color: orange;
+  background-color: rgb(50, 31, 122);
   color: whitesmoke;
   font-family: 'Oxygen', sans-serif;
   opacity: .8;
-  width: 80%;
-  margin: auto;
+  width: 50%;
+  margin: 0 auto;
   border-radius: 10px;
 }
 
@@ -62,9 +70,12 @@
 }
 
 .avatar-image {
-  padding-top: 2em;
-  height: 50%;
-  width: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding; 
+  background-clip: padding-box;
+  /* padding-top: 3rem; */
+  height: 15rem;
+  width: 15rem;
 }
 
 .list-items {
@@ -80,7 +91,7 @@
 .list-item-cont {
   line-height: 1em;
   color: honeydew;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
   font-style: oblique;
   text-align: left;
@@ -109,6 +120,14 @@
 
 .projects-grid {
   display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+}
+
+.project-card {
+  min-width: 320px;
+  margin: 5px 5px;
+  padding-bottom: 1rem;
 }
 
 .progressbar {
@@ -150,7 +169,7 @@
 }
 
 .profile-pic {
-  background: url('./img/profile.jpg') no-repeat;
+  background: url('./img/img.jpg') no-repeat;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -172,9 +191,10 @@
 
 #footer {
   position: bottom;
-  background: #1a2a6c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   text-align: center;
   color: white;
   width: 100%;
