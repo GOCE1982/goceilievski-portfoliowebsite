@@ -10,12 +10,10 @@ class Landing extends Component {
          return(
              <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
-                    <Cell col={12} style={{paddingTop: '3.5em', margin: 0}} className="dark-overlay">
-                            <img src={profile} alt="avatar" className="avatar-image" />
-                            <p></p>
-                            <h1 className="banner-text">Fullstack Web Developer</h1>
-                    </Cell>
-                    <Cell col={12} className="dark-overlay" style={{margin: 0}}>
+                    <Cell col={12} style={{paddingTop: '3.5em', margin: 'auto 0'}} className="dark-overlay">
+                        <img src={profile} alt="avatar" className="avatar-image" />
+                        <p></p>
+                        <h1 className="banner-text">Fullstack Web Developer</h1>
                         <div style={{display: 'grid', justifyContent: 'center'}}>
                             <List>
                                 <ListItem >
