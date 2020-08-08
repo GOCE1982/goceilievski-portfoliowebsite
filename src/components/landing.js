@@ -16,7 +16,7 @@ class Landing extends Component {
                             <h1 className="banner-text">Fullstack Web Developer</h1>
                     </Cell>
                     <Cell col={12} className="dark-overlay" style={{margin: 0}}>
-                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                        <div style={{display: 'grid', justifyContent: 'center'}}>
                             <List>
                                 <ListItem >
                                     <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Highly Motivated</ListItemContent>
@@ -53,7 +53,7 @@ class Landing extends Component {
                     </Cell>
                     <Cell col={12}>
                         <div className="banner-text">
-                            <h6>HTML/CSS | JavaScript | React | Redux | NodeJS | Express | MongoDB</h6>
+                            <h6>HTML/CSS | Bootstrap 4 | Material-UI | JavaScript | React | Redux | NodeJS | Express | MongoDB</h6>
                         </div>
                     </Cell>
                 </Grid> 
