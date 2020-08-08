@@ -29,9 +29,9 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 @media screen and (min-width: 841px) { 
-  .demo-grid-1 {
+  .landing-grid {
     /* left: 50%; */
-    position: fixed;
+    position: relative;
     display: grid;
     grid-template-rows: auto 1fr auto;
     bottom: 0;
@@ -51,10 +51,11 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 .banner-text {
-  background-color: rgb(50, 31, 122);
+  background-color: rgb(35, 14, 110);
   color: whitesmoke;
   font-family: 'Oxygen', sans-serif;
   opacity: .8;
+  min-width: fit-content;
   width: 50%;
   margin: 0 auto;
   border-radius: 10px;
@@ -110,7 +111,6 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   display: flex;
   justify-content: space-between;
   text-align: center;
-  display: block;
   font-size: 2em;
   margin-top: 5px;
   padding: 3px;
