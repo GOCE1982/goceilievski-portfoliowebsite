@@ -8,29 +8,29 @@ import profile from "../img/img.jpg";
 class Landing extends Component {
      render() {
          return(
-             <div style={{width: '100%', margin: 'auto'}}>
+             <div style={{width: '100%', margin: '0'}}>
                 <Grid className="landing-grid">
-                    <Cell col={12} style={{paddingTop: '3.5em', margin: 'auto 0'}} className="dark-overlay">
+                    <Cell col={12} style={{paddingTop: '3.5em', margin: '0'}} className="dark-overlay">
                         <img src={profile} alt="avatar" className="avatar-image" />
                         <p></p>
-                        <h1 className="banner-text">Fullstack Web Developer</h1>
+                        <h1 className="banner-text">Front-end Developer</h1>
                         <div style={{display: 'grid', justifyContent: 'center'}}>
                             <List>
                                 <ListItem >
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Highly Motivated</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Highly motivated</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Fully Reliable</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Self-driven</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>JavaScript Expert</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Laid-back personality</ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Tech Nerd</ListItemContent>
+                                    <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Passionate about tech</ListItemContent>
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent className="list-item-cont">
-                                        <Link to={'/projects'}>View My Projects</Link>
+                                        <Link to={'/projects'}>View My Personal Projects</Link>
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem>

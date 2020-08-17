@@ -14,14 +14,14 @@ class Resume extends Component {
                  <Grid>
                      <Cell col={4}>
                          <h2 style={{paddingTop: "1em"}}>Goce Ilievski</h2>
-                         <h4 style={{color: "grey"}}>Fullstack JavaScript Web Developer</h4>
+                         <h4 style={{color: "grey"}}>JavaScript Web Developer</h4>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
-                         <p>A self-driven enthusiast who wants to make a permanent career change and transition into web development. Started with programming and JavaScript back in 2015. Currently trying to land the very first job in the industry.</p>
+                         <p>A self-driven enthusiast, passionate about web development, looking to make a permanent career change and transition into web development. Started with programming and JavaScript back in 2015. Currently trying to land the very first job in the industry.</p>
                          <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
                          <h5>Address</h5>
                          <p>Skopje, North Macedonia</p>
                          <h5>Phone</h5>
-                         <p>(+389)070770189</p>
+                         <p>(+389)70770189</p>
                          <h5>Email</h5>
                          <p>goce.ilievski@live.com</p>
                          <p>gotze.ilievski@gmail.com</p>
