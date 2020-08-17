@@ -13,11 +13,10 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   text-align: center;
   position: relative;
   left: 0;
-  right: 0;
   display: flex;
   bottom: 0%;
   height: auto;
-  width: 100%;
+  width: auto;
   /* min-width: 1024px; */
   min-height: 100%;
   overflow: hidden;

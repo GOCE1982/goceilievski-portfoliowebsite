@@ -10,11 +10,11 @@ class Landing extends Component {
          return(
              <div>
                 <Grid className="landing-grid">
-                    <Cell col={12} style={{paddingTop: '3.5em', margin: '0'}} className="dark-overlay">
+                    <Cell col={12} style={{paddingTop: '3.5em', margin: 'auto'}} className="dark-overlay">
                         <img src={profile} alt="avatar" className="avatar-image" />
                         <p></p>
                         <h1 className="banner-text">Front-end Developer</h1>
-                        <div style={{display: 'grid', justifyContent: 'center', margin: '0'}}>
+                        <div style={{display: 'grid', justifyContent: 'center'}}>
                             <List>
                                 <ListItem >
                                     <ListItemContent className="list-item-cont"><FontAwesomeIcon icon={faStar} pull="left"/>Highly motivated</ListItemContent>
@@ -49,7 +49,7 @@ class Landing extends Component {
                             </List>
                         </div>
                     </Cell>
-                    <Cell col={12} style={{margin: '0'}}>
+                    <Cell col={12}>
                         <div className="banner-text">
                             <h6>HTML/CSS | Bootstrap 4 | Material-UI | JavaScript | React | Redux | NodeJS | Express | MongoDB</h6>
                         </div>
