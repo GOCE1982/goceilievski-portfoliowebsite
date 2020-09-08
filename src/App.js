@@ -39,8 +39,8 @@ class App extends Component {
                             <Link target="_blank" to="//github.com/GOCE1982" onClick={() => this.hideToggle()}>GitHub</Link>
                         </Navigation>
                     </Drawer>
-                    <Content style={{height: '100%'}}>
-                        <div>
+                    <Content >
+                        <div style={{height: '100%'}}>
                             <Main />
                         </div>
                     </Content>

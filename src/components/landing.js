@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Cell, List, ListItem, ListItemContent, Button} from 'react-mdl';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -8,9 +8,9 @@ import profile from "../img/img.jpg";
 class Landing extends Component {
      render() {
          return(
-             <div>
+             <Fragment>
                 <Grid className="landing-grid">
-                    <Cell col={12} style={{margin: '0 auto'}} className="dark-overlay">
+                    <Cell col={12} style={{margin: '0', width: '100%'}} className="dark-overlay">
                         <img src={profile} alt="avatar" className="avatar-image" />
                         <p></p>
                         <h1 className="banner-text">Front-end Web Developer</h1>
@@ -55,7 +55,7 @@ class Landing extends Component {
                         </div>
                     </Cell>
                 </Grid> 
-             </div>
+             </Fragment>
          )
      }
 }
