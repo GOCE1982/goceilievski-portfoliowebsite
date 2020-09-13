@@ -22,7 +22,7 @@ class Projects extends Component {
                     <Card shadow={5} className="project-card">
                         <CardTitle style={{color: '#fff', fontSize: 'bold', height: '176px', background: 'url(https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png) center / cover'}}></CardTitle>
                         <CardText style={{wordWrap: 'break-word', justifyContent: 'space-evenly', textAlign: 'justify'}}>
-                            The very fist project I finished while learning ReactJS. <br /> It exploits all the basics of React, plus using the Redux framework for state management. <br /> Heavily utilized the Twitter Bootstrap framework for the front-end. Used JSON placeholder for mocking the back-end and deployed it to a free Netlify hosting.
+                            The very first project I finished while learning ReactJS. <br /> It exploits all the basics of React, plus using the Redux framework for state management. <br /> Heavily utilized the Twitter Bootstrap framework for the front-end. Used JSON placeholder for mocking the back-end and deployed it to a free Netlify hosting.
                         </CardText>
                         <CardActions border style={{justifyContent: 'space-between', display: 'flex'}}>
                             <Button colored href="https://github.com/GOCE1982/contact-manager" target="_blank">GitHub</Button>

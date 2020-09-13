@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
 import { Grid, Cell, List, ListItem, ListItemContent, Button} from 'react-mdl';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -30,19 +29,19 @@ class Landing extends Component {
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent className="list-item-cont">
-                                        <Link to={'/projects'} style={{textDecoration: 'none'}}><Button accent raised ripple>Personal Projects</Button></Link>
+                                        <a href='/projects' style={{textDecoration: 'none'}}><Button accent raised ripple>Personal Projects</Button></a>
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent className="list-item-cont">
                                         <div className="social-links">
-                                            <Link target="_blank" to="//linkedin.com/in/goce-ilievski-06b863132/">
+                                            <a target="_blank" href="https://www.linkedin.com/in/goce-ilievski-06b863132/" rel="noopener noreferrer">
                                                 <i className="fa fa-linkedin-square" area-hidden="true" />
-                                            </Link>
+                                            </a>
                                             
-                                            <Link target="_blank" to="//github.com/GOCE1982">
+                                            <a target="_blank" href="https://github.com/GOCE1982" rel="noopener noreferrer">
                                                 <i className="fa fa-github-square" area-hidden="true" />
-                                            </Link>
+                                            </a>
                                         </div>
                                     </ListItemContent>
                                 </ListItem>
