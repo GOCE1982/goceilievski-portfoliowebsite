@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import { Grid, Cell, List, ListItem, ListItemContent, Button} from 'react-mdl';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +13,7 @@ class Landing extends Component {
                     <Cell col={12} style={{margin: '0', width: '100%'}} className="dark-overlay">
                         <img src={profile} alt="avatar" className="avatar-image" />
                         <p></p>
-                        <h1 className="banner-text">Front-end Web Developer</h1>
+                        <h1 className="banner-text">Full-stack JS Developer</h1>
                         <div style={{display: 'grid', justifyContent: 'center'}}>
                             <List>
                                 <ListItem >
@@ -29,7 +30,7 @@ class Landing extends Component {
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent className="list-item-cont">
-                                        <a href='/projects' style={{textDecoration: 'none'}}><Button accent raised ripple>Personal Projects</Button></a>
+                                        <Link to='/projects' style={{textDecoration: 'none'}}><Button className="list-item-cont" accent raised ripple>Personal Projects</Button></Link>
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem>

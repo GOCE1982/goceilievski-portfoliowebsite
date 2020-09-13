@@ -54,7 +54,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 .banner-text {
-  background-color: rgb(35, 14, 110);
+  background-color: rgb(56, 45, 202);
   color: whitesmoke;
   font-family: 'Oxygen', sans-serif;
   opacity: .8;
@@ -179,7 +179,8 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   position: relative;
   padding-top: 3px;
   height: 60vh;
-  width: 100%;
+  width: 45vh;
+  min-width: 100%;
   max-height: fit-content;
 }
 
