@@ -9,12 +9,7 @@ class Contact extends Component {
         return (
             <div className="contact-body">
                 <Grid className="contact-grid">
-                    <Cell col={6}>
-                        <div><h3>Goce (Gotse) Ilievski</h3></div>
-                        <div className="profile-pic">
-                            
-                        </div>
-                    </Cell>
+                    
                     <Cell col={6}>
                         <h2>Contact Me</h2>
                         <hr/>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
+import profile from '../img/img.jpg';
 import Skills from './skills';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faCss3Alt, faNode, faPython, faReact, faHtml5, faLinux, faNpm } from '@fortawesome/free-brands-svg-icons';
@@ -13,11 +14,12 @@ class Resume extends Component {
              <div>
                  <Grid>
                      <Cell col={4}>
+                     <img src={profile} alt="avatar" className="avatar-image" />
                          <h2 style={{paddingTop: "1em"}}>Goce Ilievski</h2>
                          <h4 style={{color: "grey"}}>JavaScript Web Developer</h4>
-                         <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
-                         <p>A self-driven enthusiast, passionate about web development, looking to make a permanent career change and transition into web development. Started with programming and JavaScript back in 2015. Currently trying to land the very first job in the industry.</p>
-                         <hr style={{borderTop: "3px solid #833fb2", width: "50%"}} />
+                         <hr style={{borderTop: "3px solid #33dff", width: "50%"}} />
+                         <p>A self-driven enthusiast, passionate about web development, looking for a career change and switch to web development. Started with programming and JavaScript back in 2015. Currently trying to land the very first job in the industry.</p>
+                         <hr style={{borderTop: "3px solid #33dff", width: "50%"}} />
                          <h5>Address</h5>
                          <p>Skopje, North Macedonia</p>
                          <h5>Phone</h5>
@@ -36,7 +38,7 @@ class Resume extends Component {
                             schoolName="University St. Cyril and Methodius - Faculty of Law Skopje"
                             schoolDescription="Finished the first module of studies on the faculty of law and currently hold a Bachelor's degree with civil law as a major."
                          />
-                         <hr style={{borderTop: '3px solid maroon'}} />
+                         <hr style={{borderTop: '3px solid #F3F3F3'}} />
                          <h2>Experience</h2>
                          <Experience
                             from={`09/02/2019`}
@@ -74,9 +76,9 @@ class Resume extends Component {
                             jobName={`Attorney's Office Intern`}
                             jobDescription={`Attending at court ruling, writing legal appeals and other legal documents, maintaining archive, obtaining documentation from the state firm registry, providing legal consulting.`}
                          />
-                        <hr style={{borderTop: '3px solid maroon'}} />
-                        <h2>Skills</h2>
-                        <div style={{fontSize: '3rem', display: 'inline-block', width: '90%'}}> 
+                        <hr style={{borderTop: '3px solid #F3F3F3'}} />
+                        <h2 style={{textAlign: 'center'}}>Skills</h2>
+                        <div style={{fontSize: '3rem', display: 'inline-block', width: '90%', textAlign: 'center'}}> 
                             <FontAwesomeIcon icon={faHtml5} transform="right-2" fixedWidth/>
                             <FontAwesomeIcon icon={faCss3Alt} transform="right-2" fixedWidth/>
                             <FontAwesomeIcon icon={faJs} transform="right-4" fixedWidth/>
