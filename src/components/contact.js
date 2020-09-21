@@ -11,59 +11,91 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsappSquare, faViber, faSkype, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
-class Contact extends Component {
-    state = {
-        success: false
-    }
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
-    setSuccess = () => {
-        if(window.location.search.includes('success=true')) {
-            this.setState({success: true})
+class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: "",
+            email: "",
+            message: "",
+            alert: null
         }
     }
 
+    handleSubmit = e => {
+        if((this.state.name === '' && this.state.email === '') || this.state.message === '') {
+            this.setState({alert: 'Please enter something'});
+            setTimeout(() => this.setState({alert: null}), 3000);
+        } else {
+            fetch('/#contact', {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...this.state })
+            })
+            .then(() => this.setState({alert: 'Message successfully sent'}))
+            .then(setTimeout(() => this.setState({alert: null}), 3000))
+            .catch(err => alert(err))
+        }
+
+        e.preventDefault();
+    }
+
+    handleChange = (e) => this.setState({ [e.target.name]: e.target.value} );
+
     render() {
+        const { name, email, message, alert } = this.state;
+
         return (
             <div className="contact-body">
                 <Grid className="contact-grid">
                     <Cell col={6}>
                         <h3>Send me a message</h3>
-                        {this.state.success && (
-                            <p style={{color: 'green'}}>Successfully sent message</p>
-                        )}
-                        <form name="contact" method="POST" data-netlify="true" action="/?success=true">
+                        {alert !== null ? <p style={{color: '#2838dd', fontSize: '20px'}}>{`${alert}`}</p> : null}
+                        <form name="contact" method="POST" data-netlify="true" action="/?success=true" onSubmit={this.handleSubmit}>
                             <input type="hidden" name="form-name" value="contact" />
                             <p>
                                 <Textfield 
-                                    onChange={() => {}}
+                                    onChange={this.handleChange}
                                     label="Name"
+                                    name="name"
+                                    value={name}
                                     style={{width: '200px'}}
                                 />
                             </p>
                             <p>
                                 <Textfield 
-                                    onChange={() => {}}
+                                    onChange={this.handleChange}
                                     label="Email"
+                                    name="email"
+                                    value={email}
                                     style={{width: '200px'}}
                                 />
                             </p>
                             <p>
                                 <Textfield 
-                                    onChange={() => {}}
+                                    onChange={this.handleChange}
                                     label="Message"
+                                    name="message"
+                                    value={message}
                                     floatingLabel
                                     rows="8"
                                     maxRows="12"
                                 />
                             </p>
                             <p>
-                                <Button type="submit">Send</Button>
+                                <Button style={{width: '200px'}} raised type="submit">Send</Button>
                             </p>
                         </form>
                     </Cell>
                     <Cell col={6}>
-                        <h2>Contact Me</h2>
-                        <hr/>
+                        <h3 style={{textAlign: 'left'}}>Contact Me</h3>
+                        
                         <div>
                             <List>
                                 <ListItem>

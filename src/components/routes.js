@@ -4,6 +4,7 @@ import Landing from './landing';
 import Resume from './resume';
 import Projects from './projects';
 import Contact from './contact';
+import NotFound from './notFound';
 import TitleComponent from './title';
 
 const withTitle = ({ component: Component, title }) => {
@@ -23,6 +24,7 @@ const LandingComponent = withTitle({ component: Landing, title: 'My Portfolio'})
 const ResumeComponent = withTitle({ component: Resume, title: 'My Resume'})
 const ProjectsComponent = withTitle({ component: Projects, title: 'My Projects'})
 const ContactComponent = withTitle({ component: Contact, title: 'Contact Me'})
+const NotFoundComponent = withTitle({ component: NotFound, title: 'Page Not Found'})
 
 const Main = () => (
     <Switch>
@@ -30,6 +32,7 @@ const Main = () => (
         <Route path="/resume" component={ResumeComponent} />
         <Route path="/projects" component={ProjectsComponent} />
         <Route path="/contact" component={ContactComponent} />
+        <Route component={NotFoundComponent}/>
     </Switch>
 )
 
