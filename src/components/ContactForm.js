@@ -12,30 +12,44 @@ class ContactForm extends Component {
         this.state = {
             name: "",
             email: "",
-            message: ""
+            message: "",
+            alert: null
         }
     }
 
     handleSubmit = e => {
-        fetch("/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
-        })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-  
+        if((this.state.name === '' && this.state.email === '') || this.state.message === '') {
+            this.setState({alert: 'Please enter your name, email and message'});
+            setTimeout(() => this.setState({alert: null}), 3000);
+        } else {
+            fetch('/contact', {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...this.state })
+            })
+            .then(() => this.setState({alert: 'Message successfully sent'}))
+            .then(setTimeout(() => this.setState({alert: null}), 3000))
+            .then(() => this.setState({
+                name: "",
+                email: "",
+                message: ""
+            }))
+            .catch(err => alert(err))
+        }
+
         e.preventDefault();
-      };
+    }
+
     handleChange = (e) => this.setState({ [e.target.name]: e.target.value} );
 
     render() {
-        const { name, email, message } = this.state;
+        const { name, email, message, alert } = this.state;
 
         return (
             <div>
                <h3>Send me a message</h3>
-                <form name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
+                {alert !== null && <p style={{color: '#2255dd', fontSize: '17px'}}>{`${alert}`}</p>}
+                <form className="form" netilify onSubmit={this.handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <label>
