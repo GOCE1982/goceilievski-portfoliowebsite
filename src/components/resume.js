@@ -18,7 +18,7 @@ class Resume extends Component {
                          <h2 style={{paddingTop: "1em"}}>Goce Ilievski</h2>
                          <h4 style={{color: "grey"}}>JavaScript Web Developer</h4>
                          <hr style={{borderTop: "3px solid #33dff", width: "50%"}} />
-                         <p>A self-driven enthusiast, passionate about web development, looking for a career change and switch to web development. Started with programming and JavaScript back in 2015. Currently trying to land the very first job in the industry.</p>
+                         <p>A self-driven person, passionate about learning web development, now looking for a career change and transition into the IT industry. Started with programming and JavaScript back in 2016. Currently trying to land the very first job as a web developer.</p>
                          <hr style={{borderTop: "3px solid #33dff", width: "50%"}} />
                          <h5>Address</h5>
                          <p>Skopje, North Macedonia</p>
@@ -32,6 +32,22 @@ class Resume extends Component {
                      </Cell>
                      <Cell col={8} className="resume-right">
                          <h2>Education</h2>
+                         <Education 
+                            startYear={2019}
+                            endYear={2019}
+                            schoolName="Udemy.com"
+                            schoolDescription="Finished a short course in ES6 syntax: Essentials in JavaScript ES6 - a Fun and Clear Introduction."
+                            link="https://www.udemy.com/certificate/UC-TEIJYE5T/"
+                            imgSource="https://udemy-certificate.s3.amazonaws.com/image/UC-TEIJYE5T.jpg"
+                         />
+                         <Education 
+                            startYear={2018}
+                            endYear={2019}
+                            schoolName="Udemy.com"
+                            schoolDescription="Finished The Web Developer Bootcamp online course by Colt Steele in a time span of 5 months. Covered topics: HTML, CSS, Vanilla JS, Node, Express, MongoDB, Mongoose, jQuery, RESTfull routing, Git and Github, deploying through Heroku CLI."
+                            link="https://www.udemy.com/certificate/UC-FX9JUIXT/"
+                            imgSource="https://udemy-certificate.s3.amazonaws.com/image/UC-FX9JUIXT.jpg"
+                         />
                          <Education
                             startYear={2002}
                             endYear={2007}
