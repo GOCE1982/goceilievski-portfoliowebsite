@@ -5,7 +5,7 @@ import Experience from './experience';
 import profile from '../img/img.jpg';
 import Skills from './skills';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs, faCss3Alt, faNode, faPython, faReact, faHtml5, faLinux, faNpm } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faCss3Alt, faNode, faPython, faReact, faHtml5, faNpm } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 class Resume extends Component {
@@ -33,10 +33,18 @@ class Resume extends Component {
                      <Cell col={8} className="resume-right">
                          <h2>Education</h2>
                          <Education 
+                            startYear={2020}
+                            endYear={2020}
+                            schoolName="Udemy.com"
+                            schoolDescription="An in-depth tutorial on React, React-Redux, Router, 0Auth and React Hooks"
+                            link="https://www.udemy.com/certificate/UC-7b729f0f-f3d5-4d0d-a28e-c3c4857f9a1a/"
+                            imgSource="https://udemy-certificate.s3.amazonaws.com/image/UC-7b729f0f-f3d5-4d0d-a28e-c3c4857f9a1a.jpg"
+                         />
+                         <Education 
                             startYear={2019}
                             endYear={2019}
                             schoolName="Udemy.com"
-                            schoolDescription="Finished a short course in ES6 syntax: Essentials in JavaScript ES6 - a Fun and Clear Introduction."
+                            schoolDescription="A short tutorial course in ES6 syntax: Essentials in JavaScript ES6 - a Fun and Clear Introduction."
                             link="https://www.udemy.com/certificate/UC-TEIJYE5T/"
                             imgSource="https://udemy-certificate.s3.amazonaws.com/image/UC-TEIJYE5T.jpg"
                          />
@@ -103,7 +111,6 @@ class Resume extends Component {
                             <FontAwesomeIcon icon={faNpm} transform="right-16" fixedWidth/>
                             <FontAwesomeIcon icon={faPython} transform="right-22" fixedWidth/>
                             <FontAwesomeIcon icon={faDatabase} transform="right-24" fixedWidth/>
-                            <FontAwesomeIcon icon={faLinux} transform="right-26" fixedWidth/>
                         </div>
                          <Skills 
                             skill="Javascript" 

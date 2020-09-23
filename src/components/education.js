@@ -19,7 +19,7 @@ const Education = ({
                 <h4 style={{marginTop: '0px'}}>{schoolName}</h4>
                 <p>{schoolDescription}</p>
                 <p>
-                    <img src={imgSource} style={{width: '65%'}} alt="" />
+                    <img src={imgSource} style={{width: '70%'}} alt="" />
                 </p>
                 <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
             </Cell>
