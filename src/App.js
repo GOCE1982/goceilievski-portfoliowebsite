@@ -35,8 +35,8 @@ class App extends Component {
                             <Link to="/resume" onClick={() => this.hideToggle()}>Resume</Link>
                             <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
                             <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
-                            <Link target="_blank" to="//linkedin.com/in/goce-ilievski-06b863132/" onClick={() => this.hideToggle()}>LinkedIn</Link>
-                            <Link target="_blank" to="//github.com/GOCE1982" onClick={() => this.hideToggle()}>GitHub</Link>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/goce-ilievski-06b863132/" onClick={() => this.hideToggle()}>LinkedIn</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/GOCE1982" onClick={() => this.hideToggle()}>GitHub</a>
                         </Navigation>
                     </Drawer>
                     <Content >
