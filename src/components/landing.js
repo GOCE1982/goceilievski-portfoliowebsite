@@ -16,7 +16,7 @@ class Landing extends Component {
                             <List>
                                 <ListItem>
                                     <ListItemContent>
-                                        <Link to='/projects' style={{textDecoration: 'none'}}><Button className="list-item-cont" style={{backgroundColor: '#3d3d3d', fontFamily: 'monospace'}} raised ripple>View My Work</Button></Link>
+                                        <Link to='/projects' style={{textDecoration: 'none'}}><Button className="list-item-cont" style={{backgroundColor: '#3d3d3d', fontFamily: 'monospace'}} raised ripple>View My Projects</Button></Link>
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem>
