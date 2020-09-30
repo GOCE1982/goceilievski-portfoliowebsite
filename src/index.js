@@ -5,14 +5,13 @@ import App from './App';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router 
-    forceRefresh={true}
     history={history}
   >
     <App />

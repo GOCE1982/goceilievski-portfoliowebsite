@@ -25,7 +25,7 @@ class Landing extends Component {
                                             <a target="_blank" href="https://www.linkedin.com/in/goce-ilievski-06b863132/" rel="noopener noreferrer" style={{color: '#3d3d3d'}}>
                                                 <i className="fa fa-linkedin-square" area-hidden="true" />
                                             </a>
-                                            <a target="_blank" href="https://github.com/GOCE1982" rel="noopener noreferrer" style={{color: '#3d3d3d'}}>
+                                            <a target="_blank" href="https://www.github.com/GOCE1982" rel="noopener noreferrer" style={{color: '#3d3d3d'}}>
                                                 <i className="fa fa-github-square" area-hidden="true" />
                                             </a>
                                         </div>
