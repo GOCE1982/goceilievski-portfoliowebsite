@@ -43,16 +43,28 @@ class Projects extends Component {
             )
         } else if(this.state.activeTab === 1) {
             return(
-                <Card shadow={5} className="project-card">
+                <div className="projects-grid">
+                    <Card shadow={5} className="project-card">
                         <CardTitle style={{color: '#fff', fontSize: 'bold', height: '176px', background: 'url(https://miro.medium.com/max/900/0*UqGyYmWCRQnjLzSk.jpg) center / cover'}}></CardTitle>
                         <CardText style={{wordWrap: 'break-word', justifyContent: 'space-evenly', textAlign: 'justify'}}>
                         Social network project based on a Udemy course. Build with React, Node Express, and Mongodb. <br /> Uses Bcryptjs, passport and jsonwebtoken to create a secure platform for developers to communicate. <br /> The back-end is a full REST API and it's state is managed by Redux. It is taking care of the main properties as users, profiles and post. <br /> Register your profile, link it to your github to show last 5 repos, add experience and education. Share posts, edit them, comment to posts and remove comments. <br /> Hosted on the free Heroku service.
                         </CardText>
                         <CardActions border style={{justifyContent: 'space-between', display: 'flex'}}>
                             <Button colored href="https://github.com/GOCE1982/devbook-social-network" target="_blank">GitHub</Button>
-                            <Button colored href="https://devbook-social-network.herokuapp.com/" target="_blank">Live Demo</Button>
+                            <Button colored href="https://devbook-social-network.herokuapp.com" target="_blank">Live Demo</Button>
                         </CardActions>
                     </Card>
+                    <Card shadow={5} className="project-card">
+                    <CardTitle style={{color: '#fff', fontSize: 'bold', height: '176px', background: 'url(https://gainfromhere.com/wp-content/uploads/2018/05/mern-stack-1.jpg) center / cover'}}></CardTitle>
+                    <CardText style={{wordWrap: 'break-word', justifyContent: 'space-evenly', textAlign: 'justify'}}>
+                    A simple contacts managment app, built with React hooks and context API, Express.js and MongoDB. <br /> Used Bcrypt and jsonwebtoken to implement authentication. <br /> The back-end is a full CRUD application. <br /> Allowes registration of users and storing their client contacts on a cloud database. <br /> Hosted on the free Heroku service.
+                    </CardText>
+                    <CardActions border style={{justifyContent: 'space-between', display: 'flex'}}>
+                        <Button colored href="https://github.com/GOCE1982/client-contacts" target="_blank">GitHub</Button>
+                        <Button colored href="https://client-contacts.herokuapp.com" target="_blank">Live Demo</Button>
+                    </CardActions>
+                </Card>
+            </div>
             )
         } else if(this.state.activeTab === 2) {
             return(
