@@ -39,6 +39,15 @@ class Projects extends Component {
                             <Button colored href="https://reactclientpanel-e6641.firebaseapp.com/" target="_blank">Live Demo</Button>
                         </CardActions>
                     </Card>
+                    <Card shadow={5} className="project-card">
+                        <CardTitle style={{color: '#fff', fontSize: 'bold', height: '176px', background: 'url(https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png) center / cover'}}></CardTitle>
+                        <CardText style={{wordWrap: 'break-all', justifyContent: 'space-evenly', textAlign: 'justify'}}>
+                            A browser-based coding environment that is run by a CLI - JSX Editor.<br />Used the WASM EsBuild plugin to build a custom plugin which will compile and execute Javascript code on the fly.<br />A production level application done completely in Typescript and an Express application for the backend. Used the Monaco editor as a template for a full functional code editor. The code cells and the markdown cells persist data that is saved for every next session. Installed on the users computer by running a CLI command - 'npx jsx-editor serve' or 'npm i -g jsx-editor serve'.
+                        </CardText>
+                        <CardActions border style={{justifyContent: 'space-between', display: 'flex'}}>
+                            <Button colored href="https://github.com/GOCE1982/jsx-editor" target="_blank">GitHub</Button>
+                        </CardActions>
+                    </Card>
                 </div>
             )
         } else if(this.state.activeTab === 1) {

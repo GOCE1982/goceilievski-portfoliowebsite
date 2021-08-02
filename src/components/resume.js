@@ -64,6 +64,12 @@ class Resume extends Component {
                          />
                          <hr style={{borderTop: '3px solid #F3F3F3'}} />
                          <h2>Experience</h2>
+                         <Experience 
+                            from={`12/02/2020`}
+                            to={` / `}
+                            jobName={`Document Control Specialist / Agile Pro Solutions Macedonia`}
+                            jobDescription={`Verifying documents for consistency and compliance to requirements. Resolving issues together with QA team. Complete document turnover of test reports ran on equipment installed in Facebook data centres in the U.S. through the e-Builder platform.`}
+                         />
                          <Experience
                             from={`09/02/2019`}
                             to={`04/02/2020`}
